@@ -75,6 +75,15 @@ nav a.nav-link {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  position: relative;
+}
+
+.header-main-info-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .header-main-info h1 {
