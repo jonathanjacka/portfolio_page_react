@@ -43,3 +43,42 @@ nav a.nav-link {
 .navbar-menu-icon {
   color: #272727;
 }
+
+/****************** HEADER ******************/
+
+.header-wrapper {
+  background: url('./assets/header-background1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  z-index: -1;
+}
+
+.header-wrapper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #839bff;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.header-main-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.header-main-info h1 {
+  color: #fff;
+  text-shadow: 2px 2px #272727;
+  font-size: 5rem;
+}
