@@ -157,3 +157,18 @@ nav a.nav-link {
     width: 10rem;
   }
 }
+
+/******************skills ******************/
+
+.skills-wrapper .row {
+  justify-content: space-around;
+}
+
+.skills-content-box {
+  line-height: 2rem;
+}
+
+.skills-content-box h3 {
+  text-align: center;
+  padding: 3rem 0;
+}
