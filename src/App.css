@@ -141,27 +141,27 @@ nav a.nav-link {
   }
 }
 
-/* @media (max-width: 1000px) {
-  .about-me-content h1 {
-    margin: 3rem 0;
-  }
-} */
-
 @media (max-width: 468px) {
   .about-me-content h1 {
     font-size: 1.7rem;
     margin: 2rem 0;
     text-align: center;
   }
+
+  .about-me-content p {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .about-me-profile-img {
     width: 10rem;
   }
 }
 
-/******************skills ******************/
+/****************** SKILLS ******************/
 
 .skills-wrapper .row {
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .skills-content-box {
@@ -169,6 +169,50 @@ nav a.nav-link {
 }
 
 .skills-content-box h3 {
+  height: 10rem;
+  padding: 10% 0;
   text-align: center;
-  padding: 3rem 0;
+}
+
+.skills-icon {
+  text-align: center;
+}
+
+.skills-icon.laptop {
+  color: #ff00ff;
+}
+
+.skills-icon.shapes {
+  color: #839bff;
+}
+
+.skills-icon.group {
+  color: #01ffff;
+}
+
+@media (max-width: 1024px) {
+  .skills-content-box p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-content-box h3 {
+    height: 6rem;
+  }
+  .skills-content-box p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 468px) {
+  .skills-content-box h3 {
+    padding: 0.5rem 0;
+    height: fit-content;
+  }
+  .skills-content-box p {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

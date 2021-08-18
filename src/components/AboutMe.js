@@ -17,11 +17,11 @@ export const AboutMe = () => {
         <div className='col-lg-6 col-xm-12'>
           <div className='about-me-content'>
             <h1>My name is Jonathan.</h1>
+            <p>I teach Computer Science.</p>
             <p>
-              As a Computer Science teacher, I am committed to developing
-              learning experiences and environments with creative approaches to
-              rigor, equity, and positive expectations for students of all
-              backgrounds.
+              I am committed to developing learning experiences and environments
+              with creative approaches to rigor, equity, and positive
+              expectations for students of all backgrounds.
             </p>
             <p>
               I believe that the concepts and skills that students learn in this
