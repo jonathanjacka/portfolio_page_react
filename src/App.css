@@ -321,3 +321,54 @@ nav a.nav-link {
     font-size: 0.9rem;
   }
 }
+
+/****************** PORTFOLIO ******************/
+
+.portfolio-wrapper {
+  padding: 3rem 0;
+}
+
+@media (max-width: 486px) {
+  .portfolio-wrapper {
+    padding: 1rem 0;
+  }
+}
+
+.portfolio-wrapper h1 {
+  letter-spacing: 2px;
+}
+
+.image-box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .image-box-wrapper {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+  width: 15rem;
+  height: 10rem;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-image-box h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 1rem;
+  /* height: 10rem; */
+}
