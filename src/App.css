@@ -423,3 +423,18 @@ nav a.nav-link {
     margin-bottom: 4rem;
   }
 }
+
+/****************** CONTACT ******************/
+
+.contact-wrapper {
+  padding: 1rem 0;
+}
+
+.contact-wrapper h1 {
+  padding: 1.3rem 0;
+}
+
+.contact-wrapper small {
+  color: #afafaf;
+  font-size: 0.8rem;
+}
