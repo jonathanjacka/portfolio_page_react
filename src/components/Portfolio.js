@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaCard from './MediaCard';
 
 import flippedClassroom from '../assets/flippingClassroom.jpg';
 import gameDesign from '../assets/gameDesign.jpg';
@@ -10,51 +11,53 @@ export const Portfolio = () => {
     <div className='portfolio-wrapper'>
       <div className='container'>
         <h1 className='text-center py-5'>Some things I've done</h1>
+        <div className='card-box-wrapper'>
+          <a
+            href='https://drive.google.com/file/d/1NqEnAudX6xnRPy6Q4y7DaD7MWAgQ_Dn1/view'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <MediaCard image={resume} title='Resume' content='My Resume' />
+          </a>
 
-        <div className='image-box-wrapper'>
-          {/* -- */}
-
-          <div className='portfolio-image-box'>
-            <span className='portfolio-image-text'>My resume</span>
-            <img className='portfolio-image' src={resume} alt='resume' />
-          </div>
-
-          {/* -- */}
-
-          <div className='portfolio-image-box'>
-            <span className='portfolio-image-text'>
-              Promo Video for game design elective
-            </span>
-            <img
-              className='portfolio-image'
-              src={gameDesign}
-              alt='game design elective'
+          <a
+            href='https://drive.google.com/drive/folders/1sr988AoGSg_Dpqe7LPhqjoJytonCRGsQ'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <MediaCard
+              image={portfolio}
+              title='Portfolio'
+              content='Portfolio of Lesson Examples'
             />
-          </div>
+          </a>
 
-          {/* -- */}
-
-          <div className='portfolio-image-box'>
-            <span className='portfolio-image-text'>
-              CPS Tech Talk 2019: Flipping your Classroom
-            </span>
-            <img
-              className='portfolio-image'
-              src={flippedClassroom}
-              alt='flipped classroom presentation'
+          <a
+            href='https://www.youtube.com/watch?v=XhJE8EpCiLY&feature=youtu.be'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <MediaCard
+              image={flippedClassroom}
+              title='Flipped Class'
+              content='
+              CPS Tech Talk 2019:
+              Flipping your classroom
+              '
             />
-          </div>
+          </a>
 
-          {/* -- */}
-
-          <div className='portfolio-image-box'>
-            <span className='portfolio-image-text'>
-              Portfolio of various lesson units and plans
-            </span>
-            <img className='portfolio-image' src={portfolio} alt='portfolio' />
-          </div>
-
-          {/* -- */}
+          <a
+            href='https://www.youtube.com/watch?v=bKFBEni4UJ4&feature=youtu.be'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <MediaCard
+              image={gameDesign}
+              title='Game Design'
+              content='Class Elective Promo: Game Design with Unity'
+            />
+          </a>
         </div>
       </div>
     </div>
