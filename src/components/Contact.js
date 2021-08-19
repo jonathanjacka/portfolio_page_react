@@ -1,20 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { useForm } from 'react-hook-form';
 
 import { service_id, template_id, user_id } from '../keys/keys';
 
 export const Contact = () => {
+  const [successMessage, setSuccessMessage] = useState('');
+  const { register, handleSubmit, errors } = useForm();
+
+  const onSubmit = (data, r) => {
+    sendEmail(
+      service_id,
+      template_id,
+      {
+        name: data.name,
+        phone: data.phone,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+      },
+      user_id
+    );
+    r.target.register();
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(service_id, template_id, e.target, user_id).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .send(service_id, template_id, variables, user_id)
+      .then(() => {
+        setSuccessMessage('Form sent successfully!  Please check your email.');
+        console.log(successMessage);
+      })
+      .catch((err) => console.error('Something went wrong: ' + err));
   };
 
   return (
@@ -30,7 +49,7 @@ export const Contact = () => {
         </div>
 
         <div className='container'>
-          <form onSubmit={sendEmail}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className='row'>
               <div className='col-md-6 col-xs-12'>
                 {/* NAME */}
