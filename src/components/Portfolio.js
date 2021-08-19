@@ -15,13 +15,16 @@ export const Portfolio = () => {
           {/* -- */}
 
           <div className='portfolio-image-box'>
+            <span className='portfolio-image-text'>My resume</span>
             <img className='portfolio-image' src={resume} alt='resume' />
-            <h3>My resume</h3>
           </div>
 
           {/* -- */}
 
           <div className='portfolio-image-box'>
+            <span className='portfolio-image-text'>
+              Promo Video for game design elective
+            </span>
             <img
               className='portfolio-image'
               src={gameDesign}
@@ -32,6 +35,9 @@ export const Portfolio = () => {
           {/* -- */}
 
           <div className='portfolio-image-box'>
+            <span className='portfolio-image-text'>
+              CPS Tech Talk 2019: Flipping your Classroom
+            </span>
             <img
               className='portfolio-image'
               src={flippedClassroom}
@@ -42,6 +48,9 @@ export const Portfolio = () => {
           {/* -- */}
 
           <div className='portfolio-image-box'>
+            <span className='portfolio-image-text'>
+              Portfolio of various lesson units and plans
+            </span>
             <img className='portfolio-image' src={portfolio} alt='portfolio' />
           </div>
 
