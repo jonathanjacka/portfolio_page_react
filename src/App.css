@@ -355,3 +355,71 @@ nav a.nav-link {
 .card-box-wrapper a {
   text-decoration: none;
 }
+
+/****************** TESTIMONIALS ******************/
+
+/* Testimonials */
+.testimonials {
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.testimonials h1 {
+  color: #272727;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.testimonials-content {
+  max-width: 63.125rem;
+  margin: 0 auto 2rem auto;
+}
+
+/* Testimonials Carousel */
+.testimonal-box {
+  margin: -6% auto 0 auto;
+  padding: 6% 5% 8% 5%;
+  width: 80%;
+}
+
+.carousel .slide {
+  padding-top: 2rem;
+  background-color: rgb(131, 155, 255, 0.2) !important;
+}
+
+.carousel .slide img {
+  width: 7rem !important;
+  border-radius: 50% !important;
+  border: 3px solid rgb(255, 0, 255, 0.5) !important;
+}
+
+.carousel .slide h3 {
+  letter-spacing: 2px !important;
+  margin-top: 1rem !important;
+}
+
+.carousel .slide p {
+  text-align: left !important;
+  line-height: 2rem !important;
+}
+
+@media (max-width: 486px) {
+  .testimonials {
+    padding-bottom: 1rem;
+  }
+  .carousel .slide h3 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .carousel .slide img {
+    width: 5rem !important;
+  }
+
+  .carousel .slide p {
+    /* line-height: 1.8rem !important; */
+    font-size: 0.9rem !important;
+    margin-bottom: 4rem;
+  }
+}
