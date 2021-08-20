@@ -328,7 +328,8 @@ nav a.nav-link {
 /****************** PORTFOLIO ******************/
 
 .portfolio-wrapper {
-  padding: 3rem 0;
+  padding: 3rem 0 6rem 0;
+  background-color: #f8f9fa;
 }
 
 @media (max-width: 486px) {
@@ -370,7 +371,7 @@ nav a.nav-link {
 
 .testimonials h1 {
   color: #272727;
-  padding: 3rem 0;
+  padding: 6rem 0;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -435,7 +436,7 @@ nav a.nav-link {
 /****************** CONTACT ******************/
 
 .contact-wrapper {
-  padding: 1rem 0;
+  padding: 1rem 0 8rem 0;
 }
 
 .contact-wrapper h1 {
@@ -698,6 +699,9 @@ nav a.nav-link {
 }
 
 @media (max-width: 486px) {
+  .contact-wrapper {
+    padding-bottom: 3rem;
+  }
   .contact-wrapper small {
     display: block;
     color: #afafaf;
@@ -723,5 +727,67 @@ nav a.nav-link {
 
   .contact-wrapper button {
     margin-top: 3rem;
+  }
+}
+
+/****************** FOOTER ******************/
+
+.footer-wrapper {
+  background-color: #f8f9fa;
+  color: #272727;
+  padding: 3rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+  color: #272727;
+}
+
+.footer-wrapper a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-icon-set {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-icon {
+  display: inline-block;
+  color: #a1a1a1;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.footer-icon:hover {
+  color: #525151;
+}
+
+@media (max-width: 800px) {
+  .footer-icon-set {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 486px) {
+  .footer-wrapper {
+    padding: 2rem 0;
+  }
+  .footer-wrapper a {
+    line-height: 2rem;
+  }
+  .footer-icon-set {
+    padding: 2rem 0;
+  }
+
+  .footer-icon {
   }
 }

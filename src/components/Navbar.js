@@ -39,19 +39,7 @@ const Navbar = () => {
 
             <li className='nav-item'>
               <a className='nav-link' href='#'>
-                My mission
-              </a>
-            </li>
-
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                Meaningful learning
-              </a>
-            </li>
-
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                Skills I have
+                Experience
               </a>
             </li>
 
@@ -63,7 +51,13 @@ const Navbar = () => {
 
             <li className='nav-item'>
               <a className='nav-link' href='#'>
-                Contact
+                What students say
+              </a>
+            </li>
+
+            <li className='nav-item'>
+              <a className='nav-link' href='#'>
+                Contact me
               </a>
             </li>
           </ul>
