@@ -13,9 +13,20 @@ a {
 /****************** NAV BAR ******************/
 
 nav {
+  position: fixed !important;
+  width: 100%;
+  background-color: transparent;
   z-index: 100;
   transition: all 0.3s ease-in-out;
 }
+
+/* FOR SCROLL BAR EFFECT */
+
+nav.active {
+  background-color: rgb(97, 97, 97) !important;
+}
+
+/**/
 
 nav .navBar-logo {
   width: 4rem;
@@ -26,14 +37,18 @@ nav .navbar-toggler {
   border: none;
 }
 
+nav .navbar-toggler svg {
+  color: #efefef !important;
+}
+
 nav a.nav-link {
   font-size: 0.8rem;
   margin: 0 1rem;
   font-weight: 500;
   letter-spacing: 0.125rem;
+  color: #fff !important;
+  text-shadow: 1px 1px #272727 !important;
 }
-
-/* FOR SCROLL BAR EFFECT */
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -51,10 +66,6 @@ nav a.nav-link {
 .navbar-nav > li > a:hover {
   font-weight: 600;
 }
-
-/* .navbar-menu-icon {
-  color: #272727;
-} */
 
 @media (max-width: 786px) {
   nav .navBar-logo {

@@ -48,28 +48,53 @@ export const Footer = () => {
           <div className='col-lg-4 col-md-2 col-sm-6'>
             <div className='row'>
               <div className='col'>
-                <Link className='footer-nav' smooth={true} to='home'>
+                <Link className='footer-nav' smooth={true} to='home' offset={0}>
                   Home
                 </Link>
                 <br />
-                <Link className='footer-nav' smooth={true} to='about'>
+                <Link
+                  className='footer-nav'
+                  smooth={true}
+                  to='about'
+                  offset={-90}
+                >
                   About Me
                 </Link>
                 <br />
-                <Link className='footer-nav' smooth={true} to='experience'>
+                <Link
+                  className='footer-nav'
+                  smooth={true}
+                  to='experience'
+                  offset={-90}
+                >
                   Experience
                 </Link>
               </div>
               <div className='col'>
-                <Link className='footer-nav' smooth={true} to='portfolio'>
+                <Link
+                  className='footer-nav'
+                  smooth={true}
+                  to='portfolio'
+                  offset={-90}
+                >
                   Portfolio
                 </Link>
                 <br />
-                <Link className='footer-nav' smooth={true} to='testimonials'>
+                <Link
+                  className='footer-nav'
+                  smooth={true}
+                  to='testimonials'
+                  offset={-90}
+                >
                   What students say
                 </Link>
                 <br />
-                <Link className='footer-nav' smooth={true} to='contact'>
+                <Link
+                  className='footer-nav'
+                  smooth={true}
+                  to='contact'
+                  offset={-90}
+                >
                   Contact Me
                 </Link>
               </div>

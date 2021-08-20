@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../assets/iconJ.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    setShow(window.pageYOffset > 140);
+  };
+
   return (
-    <nav className='navbar navbar-expand-lg navbar-light'>
+    <nav className={`navbar navbar-expand-lg navbar-light ${show && 'active'}`}>
       <div className='container-fluid'>
-        <Link className='navbar-brand' smooth={true} to='home'>
+        <Link className='navbar-brand' smooth={true} offset={0} to='home'>
           <img className='navBar-logo' src={logo} alt='logo' />
         </Link>
 
@@ -27,37 +38,57 @@ const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ml-auto mb-2 mb-lg-0'>
             <li className='nav-item'>
-              <Link smooth={true} to='home' className='nav-link'>
+              <Link smooth={true} to='home' className='nav-link' offset={0}>
                 Home
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link smooth={true} className='nav-link' to='about'>
+              <Link smooth={true} className='nav-link' to='about' offset={-90}>
                 About me
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link smooth={true} className='nav-link' to='experience'>
+              <Link
+                smooth={true}
+                className='nav-link'
+                to='experience'
+                offset={-90}
+              >
                 Experience
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link smooth={true} className='nav-link' to='portfolio'>
+              <Link
+                smooth={true}
+                className='nav-link'
+                to='portfolio'
+                offset={-90}
+              >
                 Portfolio
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link smooth={true} className='nav-link' to='testimonials'>
+              <Link
+                smooth={true}
+                className='nav-link'
+                to='testimonials'
+                offset={-90}
+              >
                 What students say
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link smooth={true} className='nav-link' to='contact'>
+              <Link
+                smooth={true}
+                className='nav-link'
+                to='contact'
+                offset={-90}
+              >
                 Contact me
               </Link>
             </li>
