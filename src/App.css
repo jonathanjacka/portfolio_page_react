@@ -578,6 +578,17 @@ nav a.nav-link {
   transform: scale(0.98);
 }
 
+.form-error-message {
+  font-size: 0.8rem;
+  color: #f00;
+}
+
+.form-success-message {
+  font-size: 1rem;
+  color: #f00;
+  text-align: center;
+}
+
 /* button hover effect on desktop */
 
 @media (min-width: 1030px) {
