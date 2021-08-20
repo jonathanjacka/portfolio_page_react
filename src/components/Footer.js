@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -47,18 +48,30 @@ export const Footer = () => {
           <div className='col-lg-4 col-md-2 col-sm-6'>
             <div className='row'>
               <div className='col'>
-                <a className='footer-nav'>Home</a>
+                <Link className='footer-nav' smooth={true} to='home'>
+                  Home
+                </Link>
                 <br />
-                <a className='footer-nav'>About Me</a>
+                <Link className='footer-nav' smooth={true} to='about'>
+                  About Me
+                </Link>
                 <br />
-                <a className='footer-nav'>Experience</a>
+                <Link className='footer-nav' smooth={true} to='experience'>
+                  Experience
+                </Link>
               </div>
               <div className='col'>
-                <a className='footer-nav'>Portfolio</a>
+                <Link className='footer-nav' smooth={true} to='portfolio'>
+                  Portfolio
+                </Link>
                 <br />
-                <a className='footer-nav'>What students say</a>
+                <Link className='footer-nav' smooth={true} to='testimonials'>
+                  What students say
+                </Link>
                 <br />
-                <a className='footer-nav'>Contact Me</a>
+                <Link className='footer-nav' smooth={true} to='contact'>
+                  Contact Me
+                </Link>
               </div>
             </div>
           </div>

@@ -6,6 +6,10 @@ body {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+a {
+  cursor: pointer;
+}
+
 /****************** NAV BAR ******************/
 nav .navBar-logo {
   width: 4rem;
@@ -35,11 +39,11 @@ nav a.nav-link {
 
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .navbar-nav > li > a:hover {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .navbar-menu-icon {
@@ -786,8 +790,5 @@ nav a.nav-link {
   }
   .footer-icon-set {
     padding: 2rem 0;
-  }
-
-  .footer-icon {
   }
 }

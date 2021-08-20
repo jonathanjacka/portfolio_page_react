@@ -3,7 +3,7 @@ import profile_pic from '../assets/jon1.jpg';
 
 export const AboutMe = () => {
   return (
-    <div className='container'>
+    <div className='container' id='about'>
       <div className='row py-5'>
         <div className='col-lg-6 col-xm-12'>
           <div className='about-me-photo-wrap'>

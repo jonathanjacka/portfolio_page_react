@@ -42,7 +42,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className='contact-wrapper'>
+    <div className='contact-wrapper' id='contact'>
       <div className='contact-form-container'>
         <span></span>
         <div className='text-center'>

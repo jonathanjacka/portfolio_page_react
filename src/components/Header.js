@@ -4,7 +4,7 @@ import Particles from 'react-particles-js';
 
 function Header() {
   return (
-    <div className='header-wrapper'>
+    <div className='header-wrapper' id='home'>
       <div className='header-main-info'>
         <Particles
           className='header-main-info-particles'
