@@ -11,6 +11,12 @@ a {
 }
 
 /****************** NAV BAR ******************/
+
+nav {
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
 nav .navBar-logo {
   width: 4rem;
 }
@@ -18,16 +24,16 @@ nav .navBar-logo {
 /*---Menu Links ---*/
 nav .navbar-toggler {
   border: none;
-  color: #272727;
 }
 
 nav a.nav-link {
-  color: #272727;
   font-size: 0.8rem;
   margin: 0 1rem;
   font-weight: 500;
   letter-spacing: 0.125rem;
 }
+
+/* FOR SCROLL BAR EFFECT */
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -46,9 +52,9 @@ nav a.nav-link {
   font-weight: 600;
 }
 
-.navbar-menu-icon {
+/* .navbar-menu-icon {
   color: #272727;
-}
+} */
 
 @media (max-width: 786px) {
   nav .navBar-logo {
@@ -63,7 +69,7 @@ nav a.nav-link {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   z-index: -1;
 }
