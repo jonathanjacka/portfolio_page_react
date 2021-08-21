@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form';
+import { captcha_site_key } from '../keys/keys';
 
 import { service_id, template_id, user_id } from '../keys/keys';
 
@@ -122,6 +123,8 @@ export const Contact = () => {
                   {errors.subject && 'Please enter a message'}
                 </span>
               </div>
+              <div class='g-recaptcha' data-sitekey={captcha_site_key}></div>
+              <br />
               <button
                 className='btn-main-offer contact-btn'
                 type='submit'
