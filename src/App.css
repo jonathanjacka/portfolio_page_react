@@ -587,7 +587,7 @@ nav a.nav-link {
   border: 1px solid #839bff;
 }
 
-.contact-form-container .g-recaptcha {
+.contact-form-container .recaptcha {
   padding-top: 3rem;
   display: flex;
   justify-content: center;

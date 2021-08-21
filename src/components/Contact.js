@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form';
+
+import ReCAPTCHA from 'react-google-recaptcha';
 import { captcha_site_key } from '../keys/keys';
 
 import { service_id, template_id, user_id } from '../keys/keys';
+
+const recaptchaRef = React.createRef();
 
 export const Contact = () => {
   const [successMessage, setSuccessMessage] = useState('');
@@ -28,6 +32,8 @@ export const Contact = () => {
       user_id
     );
     r.target.reset();
+    const recaptchaValue = recaptchaRef.current.getValue();
+    this.props.onSubmit(recaptchaValue);
   };
 
   const sendEmail = (service_id, template_id, variables, user_id) => {
@@ -55,7 +61,7 @@ export const Contact = () => {
         </div>
 
         <div className='container'>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(onSubmit)} type='post'>
             <div className='row'>
               <div className='col-md-6 col-xs-12'>
                 {/* NAME */}
@@ -123,11 +129,7 @@ export const Contact = () => {
                   {errors.subject && 'Please enter a message'}
                 </span>
               </div>
-              <div
-                className='g-recaptcha'
-                data-sitekey={captcha_site_key}
-              ></div>
-              <br />
+              <ReCAPTCHA className='recaptcha' sitekey={captcha_site_key} />
               <button
                 className='btn-main-offer contact-btn'
                 type='submit'
