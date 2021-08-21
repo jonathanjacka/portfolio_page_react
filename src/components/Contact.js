@@ -7,8 +7,6 @@ import { captcha_site_key } from '../keys/keys';
 
 import { service_id, template_id, user_id } from '../keys/keys';
 
-const recaptchaRef = React.createRef();
-
 export const Contact = () => {
   const [successMessage, setSuccessMessage] = useState('');
   const {
@@ -17,8 +15,13 @@ export const Contact = () => {
     formState: { errors },
   } = useForm();
 
+  let value = '';
+
+  const onChange = (val) => {
+    value = val;
+  };
+
   const onSubmit = (data, r) => {
-    console.log(data, r);
     sendEmail(
       service_id,
       template_id,
@@ -32,13 +35,12 @@ export const Contact = () => {
       user_id
     );
     r.target.reset();
-    const recaptchaValue = recaptchaRef.current.getValue();
-    this.props.onSubmit(recaptchaValue);
   };
 
   const sendEmail = (service_id, template_id, variables, user_id) => {
+    const params = { ...variables, 'g-recaptcha-response': value };
     emailjs
-      .send(service_id, template_id, variables, user_id)
+      .send(service_id, template_id, params, user_id)
       .then(() => {
         setSuccessMessage(
           'Message sent successfully!  Please check your email.'
@@ -61,7 +63,7 @@ export const Contact = () => {
         </div>
 
         <div className='container'>
-          <form onSubmit={handleSubmit(onSubmit)} type='post'>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className='row'>
               <div className='col-md-6 col-xs-12'>
                 {/* NAME */}
@@ -129,7 +131,11 @@ export const Contact = () => {
                   {errors.subject && 'Please enter a message'}
                 </span>
               </div>
-              <ReCAPTCHA className='recaptcha' sitekey={captcha_site_key} />
+              <ReCAPTCHA
+                className='recaptcha'
+                sitekey={captcha_site_key}
+                onChange={onChange}
+              />
               <button
                 className='btn-main-offer contact-btn'
                 type='submit'
