@@ -123,7 +123,10 @@ export const Contact = () => {
                   {errors.subject && 'Please enter a message'}
                 </span>
               </div>
-              <div class='g-recaptcha' data-sitekey={captcha_site_key}></div>
+              <div
+                className='g-recaptcha'
+                data-sitekey={captcha_site_key}
+              ></div>
               <br />
               <button
                 className='btn-main-offer contact-btn'
