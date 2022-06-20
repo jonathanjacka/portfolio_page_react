@@ -19,7 +19,14 @@ const Navbar = () => {
   return (
     <nav className={`navbar navbar-expand-lg navbar-light ${show && 'active'}`}>
       <div className='container-fluid'>
-        <Link className='navbar-brand' smooth={true} offset={0} to='home'>
+        <Link
+          className='navbar-brand'
+          smooth={true}
+          spy={true}
+          duration={100}
+          offset={0}
+          to='home'
+        >
           <img className='navBar-logo' src={logo} alt='logo' />
         </Link>
 
@@ -38,13 +45,27 @@ const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ml-auto mb-2 mb-lg-0'>
             <li className='nav-item'>
-              <Link smooth={true} to='home' className='nav-link' offset={0}>
+              <Link
+                smooth={true}
+                to='home'
+                spy={true}
+                duration={100}
+                className='nav-link'
+                offset={0}
+              >
                 Home
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link smooth={true} className='nav-link' to='about' offset={-90}>
+              <Link
+                smooth={true}
+                className='nav-link'
+                spy={true}
+                duration={100}
+                to='about'
+                offset={-90}
+              >
                 About me
               </Link>
             </li>
@@ -55,6 +76,8 @@ const Navbar = () => {
                 className='nav-link'
                 to='experience'
                 offset={-90}
+                spy={true}
+                duration={100}
               >
                 Experience
               </Link>
@@ -66,6 +89,8 @@ const Navbar = () => {
                 className='nav-link'
                 to='portfolio'
                 offset={-90}
+                spy={true}
+                duration={100}
               >
                 Portfolio
               </Link>
@@ -77,6 +102,8 @@ const Navbar = () => {
                 className='nav-link'
                 to='testimonials'
                 offset={-90}
+                spy={true}
+                duration={100}
               >
                 What students say
               </Link>
@@ -88,6 +115,8 @@ const Navbar = () => {
                 className='nav-link'
                 to='contact'
                 offset={-90}
+                spy={true}
+                duration={100}
               >
                 Contact me
               </Link>

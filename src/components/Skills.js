@@ -18,13 +18,12 @@ export const Skills = () => {
                 <FontAwesomeIcon icon={faLaptopCode} size='3x' />
               </div>
 
-              <h3 className='skills-content-box-h3-box1'>
-                Standards-based Teaching
-              </h3>
+              <h3 className='skills-content-box-h3-box1'>Core Compentencies</h3>
               <p>
-                All of the concepts I teach are based on the CSTA K-12 CS
-                standards. Additionally, my lesson development follows Common
-                Core Standards and Universal Design for Learning principles.
+                All of the concepts I teach are based on the updated, core
+                standards or compentencies. Additionally, my learning
+                development follows principles of inclusion, differentiation,
+                and Universal Design for Learning.
               </p>
             </div>
           </div>
@@ -36,9 +35,9 @@ export const Skills = () => {
               </div>
               <h3>Instructional Strategies</h3>
               <p>
-                In the classroom, my focus is on the creation and implementation
-                of high-leverage instructional strategies to promote
-                collaborative learning and student engagement.
+                In each learning environment, my focus is on the creation and
+                implementation of high-leverage instructional strategies to
+                promote collaborative learning and engagement.
               </p>
             </div>
           </div>
@@ -51,8 +50,9 @@ export const Skills = () => {
               <h3>Positive Collaboration</h3>
               <p>
                 I am dedicated to building positive collaboration between
-                colleagues as one of the most effective tools to produce
-                high-quality teaching, learning, and continued motivation.
+                colleagues and learners as one of the most effective tools to
+                produce high-quality teaching, learning, and continued
+                motivation.
               </p>
             </div>
           </div>

@@ -1,59 +1,16 @@
 import React from 'react';
 import FadeIn from 'react-fade-in';
-import Particles from 'react-particles-js';
 
 function Header() {
   return (
     <div className='header-wrapper' id='home'>
       <div className='header-main-info'>
-        <Particles
-          className='header-main-info-particles'
-          params={{
-            particles: {
-              number: {
-                value: 60,
-                density: {
-                  enable: true,
-                  value_area: 1500,
-                },
-              },
-              line_linked: {
-                enable: true,
-                opacity: 0.02,
-              },
-              move: {
-                direction: 'right',
-                speed: 0.05,
-              },
-              size: {
-                value: 1,
-              },
-              opacity: {
-                anim: {
-                  enable: true,
-                  speed: 1,
-                  opacity_min: 0.05,
-                },
-              },
-            },
-            interactivity: {
-              events: {
-                onclick: {
-                  enable: true,
-                  mode: 'push',
-                },
-              },
-              modes: {
-                push: {
-                  particles_nb: 1,
-                },
-              },
-            },
-            retina_detect: true,
-          }}
-        />
         <FadeIn delay={700} transitionDuration={1000}>
-          <h1>I am a teacher.</h1>
+          <h1>Science is just toddler curiosity with ceremony</h1>
+        </FadeIn>
+
+        <FadeIn delay={1000} transitionDuration={1000}>
+          <h2>Dr Amy Ko</h2>
         </FadeIn>
       </div>
     </div>
