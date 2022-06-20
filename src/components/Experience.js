@@ -19,7 +19,12 @@ export const Experience = () => {
           <div className='timeline-content'>
             <h3>
               2022-present:
-              <a href='https://www.multiverse.io/en-US' style={linkStyle}>
+              <a
+                href='https://www.multiverse.io/en-US'
+                target='_blank'
+                rel='noreferrer'
+                style={linkStyle}
+              >
                 Multiverse.io
               </a>
             </h3>
