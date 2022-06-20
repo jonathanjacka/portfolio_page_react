@@ -9,6 +9,7 @@ import { service_id, template_id, user_id } from '../keys/keys';
 
 export const Contact = () => {
   const [successMessage, setSuccessMessage] = useState('');
+  const [successMessageColor, setSuccessMessageColor] = useState('blue');
   const {
     register,
     handleSubmit,
@@ -39,15 +40,23 @@ export const Contact = () => {
 
   const sendEmail = (service_id, template_id, variables, user_id) => {
     const params = { ...variables, 'g-recaptcha-response': value };
+    setSuccessMessageColor('blue');
+    setSuccessMessage('Sending message...');
     emailjs
       .send(service_id, template_id, params, user_id)
       .then(() => {
+        setSuccessMessageColor('green');
         setSuccessMessage(
           'Message sent successfully!  Please check your email.'
         );
-        console.log(successMessage);
       })
-      .catch((err) => console.error('Something went wrong: ' + err));
+      .catch((err) => {
+        setSuccessMessageColor('red');
+        setSuccessMessage(
+          'Your message was not sent.  Please check your details and try again.'
+        );
+        console.error('Something went wrong: ' + err);
+      });
   };
 
   return (
@@ -144,7 +153,12 @@ export const Contact = () => {
                 <span></span>
                 Send Message
               </button>
-              <span className='form-success-message'>{successMessage}</span>
+              <span
+                className='form-success-message'
+                style={{ color: successMessageColor }}
+              >
+                {successMessage}
+              </span>
             </div>
           </form>
         </div>
