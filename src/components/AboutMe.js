@@ -24,13 +24,13 @@ export const AboutMe = () => {
               expectations for individuals of all backgrounds.
             </p>
             <p>
-              I believe that the concepts and skills that we develop in this
-              discipline should primarily be catalysts through which we exercise
-              our abilities and passions to build and create.
+              I am convinced that the concepts and skills that we develop in
+              this discipline should primarily be catalysts through which we
+              exercise our abilities and passions to build and create.
             </p>
 
             <p>
-              However, I also believe that at its core, learning should be a
+              Most importantly, I believe that at its core, learning should be a
               tool of liberation.
             </p>
           </div>
