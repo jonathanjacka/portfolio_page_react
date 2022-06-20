@@ -6,7 +6,11 @@ function Header() {
     <div className='header-wrapper' id='home'>
       <div className='header-main-info'>
         <FadeIn delay={700} transitionDuration={1000}>
-          <h1>I am a teacher.</h1>
+          <h1>Science is just toddler curiosity with ceremony</h1>
+        </FadeIn>
+
+        <FadeIn delay={1000} transitionDuration={1000}>
+          <h2>Dr Amy Ko</h2>
         </FadeIn>
       </div>
     </div>
