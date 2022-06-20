@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import {
   faTwitter,
   faGithub,
@@ -141,16 +140,6 @@ export const Footer = () => {
                 >
                   <i className='footer-icon'>
                     <FontAwesomeIcon icon={faCodepen} size='3x' />
-                  </i>
-                </a>
-
-                <a
-                  href='https://lanetech.org/'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <i className='footer-icon'>
-                    <FontAwesomeIcon icon={faMapMarker} size='3x' />
                   </i>
                 </a>
               </div>

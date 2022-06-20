@@ -105,7 +105,7 @@ const Navbar = () => {
                 spy={true}
                 duration={100}
               >
-                What students say
+                Testimonials
               </Link>
             </li>
 

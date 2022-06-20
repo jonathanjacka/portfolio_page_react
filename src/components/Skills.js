@@ -20,10 +20,11 @@ export const Skills = () => {
 
               <h3 className='skills-content-box-h3-box1'>Core Compentencies</h3>
               <p>
-                All of the concepts I teach are based on the updated, core
-                standards or compentencies. Additionally, my learning
-                development follows principles of inclusion, differentiation,
-                and Universal Design for Learning.
+                All concepts I teach, regardless of tool, language, or method,
+                are centered on specific, updated core standards or
+                compentencies. Additionally, my learning development follows
+                principles of inclusion, differentiation, and Universal Design
+                for Learning.
               </p>
             </div>
           </div>
